@@ -26,7 +26,7 @@ def insere_cadastro():
     while True:
         print()
         print("------======      ======------")
-        cliente = int(input("CLIENTE SUPERMECADOS CARVALHO? (1- SIM / 0-NÃO): "))
+        cliente = int(input("CLIENTE SUPERMECADOS PYTHON? (1- SIM / 0-NÃO): "))
         print()
         if cliente == 1:
             cpf = input("CPF: ")
@@ -34,7 +34,7 @@ def insere_cadastro():
             cursor.execute(sql, (cpf, ))
             nome_cliente = cursor.fetchone()
             if nome_cliente:
-                print(f"Bem-Vindo Cliente Supermercados Carvalho {nome_cliente[0]}!")
+                print(f"Bem-Vindo Cliente Supermercados PYTHON, {nome_cliente[0]}!")
                 print("------======      ======------")
                 print()
                 break
@@ -392,7 +392,7 @@ def imprime_nota(total, troco, lista_pagamento):
     print(f"{soma:<1.2f}")
     print("TROCO:", end="                                   ")
     print(f"{troco:<1.2f}")
-    print(f"PARABÉNS CLIENTE SUPERMERCADOS CARVALHO, VOCÊ ENCOMINZOU R${desconto:.2f}!")
+    print(f"PARABÉNS CLIENTE SUPERMERCADOS PYTHON!, VOCÊ ECONOMINZOU R${desconto:.2f}!")
     input("Pressione Entra para encerrar")
     if cliente == 1:
         insere_pagamento_banco_cliente(lista_pagamento, total)
