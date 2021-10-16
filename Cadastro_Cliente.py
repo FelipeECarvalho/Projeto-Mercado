@@ -66,7 +66,7 @@ connection = mysql.connector.connect(
 
 cursor = connection.cursor()
 if connection.is_connected():
-    print("----==== CADASTRO DE CLIENTE CARVALHO SUPERMERCADOS ====----")
+    print("----==== CADASTRO DE CLIENTE PYTHON SUPERMERCADOS ====----")
     print('----==== INFORMAÇÕES PESSOAIS ====----')
     print()
     nome = input("Nome: ").capitalize()
@@ -79,7 +79,7 @@ if connection.is_connected():
         sexo = input('Sexo (M/F): ')
     nascimento = insere_nascimento()
     clear()
-    print("----==== CADASTRO DE CLIENTE CARVALHO SUPERMERCADOS ====----")
+    print("----==== CADASTRO DE CLIENTE PYTHON SUPERMERCADOS ====----")
     print('----==== CADASTRO DO ENDERECO ====----')
     print()
     rua = input('Rua: ').capitalize()
@@ -102,7 +102,7 @@ if connection.is_connected():
         except ValueError:
             print("[ERRO], Digite um número válido")
     clear()
-    print("----==== CADASTRO DE CLIENTE CARVALHO SUPERMERCADOS ====----")
+    print("----==== CADASTRO DE CLIENTE PYTHON SUPERMERCADOS ====----")
     print()
     print()
     print()
