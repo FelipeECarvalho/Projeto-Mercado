@@ -16,7 +16,7 @@ def insere_nascimento():
         dia = int(nasc[0])
         mes = int(nasc[1])
         ano = int(nasc[2])
-    nasc = str(ano) + str(mes) + str(dia)  
+    nasc = nasc[2] + nasc[1] + nasc[0]
     return nasc
  
 
