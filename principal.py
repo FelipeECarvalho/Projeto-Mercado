@@ -415,7 +415,6 @@ def insere_pagamento_banco_normal(pagamentos, tot):
         quant = forma[1]
         tipo = forma[0]
         dados = (quant, tipo, idvenda)
-        print(quant, tipo, id)
         sql = "INSERT INTO OPCAO VALUES(NULL, %s, %s, %s)"
         cursor.execute(sql, dados)
         connection.commit()
@@ -434,7 +433,6 @@ def insere_pagamento_banco_cliente(pagamentos, tot):
         quant = forma[1]
         tipo = forma[0]
         dados = (quant, tipo, idvenda)
-        print(quant, tipo, id)
         sql = "INSERT INTO OPCAO VALUES(NULL, %s, %s, %s)"
         cursor.execute(sql, dados)
         connection.commit()
