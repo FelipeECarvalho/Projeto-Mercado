@@ -443,9 +443,11 @@ def nova_compra():
     global total
     global cont
     global cliente
+    global desconto
     itens = list()
     total = list()
     cont = 0
+    desconto = 0
     cliente = 0
     os.system('cls')
 
@@ -455,9 +457,11 @@ def cancela_compra():
     global total
     global cont
     global cliente
+    global desconto
     itens = list()
     total = list()
     cont = 0
+    desconto = 0
     cliente = 0
     print("---- COMPRA CANCELADA ----")
     sleep(1)
